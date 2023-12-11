@@ -29,7 +29,16 @@
             <!-- <p v-show="inStock">In Stock</p> -->
             <!-- <p v-if="inStock">In Stock</p> -->
             <!-- <p v-else>Out of Stock</p> -->
+            <ul>
+              <li v-for="detail in details">{{detail}}</li>
+            </ul>
+            <div v-for="variant in variants" :key="variant.id">
+              {{variant.color}}
+            </div>
 
+            <ul>
+              <li v-for="size in sizes">{{size}}</li>
+            </ul>
             <a :href="url">Google</a>
             <!-- solution -->
           </div>
